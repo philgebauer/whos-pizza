@@ -9,10 +9,11 @@ var pool = new pg.Pool(config);
 
 
 router.post('/', function(req, res) {
+  console.log("Add student route hit!");
   console.log(req.body);
   pool.connect()
   .then(function(client) {
-    client.query('INSERT INTO signup (name)' + [req.body.studentName])
+    client.query("INSERT INTO signup (name) VALUES ($1)", [req.body.studentName])
     .then(function(result) {
       client.release();
       console.log('Client add successful');
@@ -20,6 +21,7 @@ router.post('/', function(req, res) {
     })
     .catch(function(err) {
       console.log("Query error adding student to DB");
+      console.log(err);
       client.release();
       res.sendStatus(500);
     })

@@ -5,9 +5,16 @@ app.controller('HomeController', ['$http', function($http) {
   self.studentName = "Hello World";
 
   self.addStudent = function() {
-    $http.post('/addStudent', self.studentName).then(function(res) {
+    $http({
+      method: 'POST',
+      url: '/addStudent',
+      data: {
+        studentName: self.studentName
+      }
+    }).then(function(res) {
       console.log(res);
-    });
+    })
+
   };
 
   console.log("Home Controller Running");
