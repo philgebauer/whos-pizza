@@ -3,7 +3,12 @@ app.controller('AdminController', ['$http', function($http) {
 
   console.log("Admin Controller Running");
 
-  var studentCount = studentArray.length;
+  self.time = 0;
+  self.test = function() {
+    console.log(self.time);
+  }
+
+  // var studentCount = studentArray.length;
 
   // $http({
   //   method: 'GET',

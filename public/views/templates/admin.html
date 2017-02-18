@@ -31,14 +31,16 @@
               <input type="text" name="whoPizza" />
             </md-input-container>
             <div class="form-group">
-              <label for="whenEveryone">When will the pizza be available for everyone?</label>
-              <input type="text" name="whenEveryone" />
+              <label for="whenEveryone">Minutes until pizza is available to everyone</label>
+              <select ng-model="admin.time">
+                <option ng-repeat="time in [30, 60, 90, 120, 150, 180]">{{time}}</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="notes">Notes:</label>
               <input type="text" name="notes" />
             </div>
-            <button type="submit" ng-click="">Submit</button>
+            <button type="submit"  ng-click="admin.test()">Submit</button>
           <button ng-click="">Select a random person to get pizza access</button>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
