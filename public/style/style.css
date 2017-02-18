@@ -1,0 +1,20 @@
+* {
+  background-color: #FAFAFA;
+  opacity: 60;
+}
+
+.header {
+  height: 60px;
+  background-color: #FAFAFA;
+  opacity: 60;
+  padding-top: 3%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.pizza {
+  margin: 0 auto 0 auto;
+}
