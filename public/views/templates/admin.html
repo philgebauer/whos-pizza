@@ -28,7 +28,7 @@
 
             <md-input-container>
               <label for="whoPizza">Who is the pizza for?</label>
-              <input type="text" name="whoPizza" />
+              <input type="text" name="whoPizza" ng-model="admin.who"/>
             </md-input-container>
             <div class="form-group">
               <label for="whenEveryone">Minutes until pizza is available to everyone</label>
@@ -38,13 +38,9 @@
             </div>
             <div class="form-group">
               <label for="notes">Notes:</label>
-              <input type="text" name="notes" />
+              <input type="text" name="notes" ng-model="admin.notes"/>
             </div>
             <button type="submit"  ng-click="admin.test()">Submit</button>
           <button ng-click="">Select a random person to get pizza access</button>
         </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>Action 1</md-button>
-          <md-button>Action 2</md-button>
-        </md-card-actions>
       </md-card>

@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var addStudent = require('./routes/addStudent');
+var admin = require('./routes/admin')
 var bodyParser = require('body-parser');
 const LOCALPORT = 3000;
 var portDecision = process.env.PORT || LOCALPORT;
@@ -19,6 +20,7 @@ app.get('/', function(req, res) {
 });
 
 // app.use('/addStudent', addStudent);
+app.use('/admin', admin);
 
 app.listen(portDecision, function() {
   console.log("Listening on port ", portDecision);
