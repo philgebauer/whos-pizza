@@ -1,15 +1,15 @@
 var app = angular.module('app', ['ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $locationProvider.hasPrefix('');
+  $locationProvider.hashPrefix('');
   $routeProvider
     .when('/home', {
-      template: '/views/home.html',
+      templateUrl: '/views/templates/home.html',
       controller: 'HomeController',
       controllerAs: 'home'
     })
     .when('/admin', {
-      template: '/views/admin.html',
+      templateUrl: '/views/templates/admin.html',
       controller: 'AdminController',
       controllerAs: 'admin'
     })
