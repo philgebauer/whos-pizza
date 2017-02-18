@@ -3,19 +3,26 @@ app.controller('AdminController', ['$http', function($http) {
 
   console.log("Admin Controller Running");
 
-  var studentCount = studentArray.length;
+  self.time = 0;
+  self.notes = '';
+  self.who = '';
+  self.test = function() {
+    console.log(self.time, self.notes, self.who);
 
-  // $http({
-  //   method: 'GET',
-  //   url: '/random',
-  //   headers: {
-  //     studentCount: studentCount
-  //   }
-  // })
-  // .then(function(res) {
-  //   var winningStudent = res.random;
-  //
-  // })
+      $http({
+        method: 'POST',
+        url: '/admin',
+        data: {
+          time: self.time,
+          notes: self.notes,
+          who: self.who
+        }
+      })
+      .then(function(res) {
+        console.log(res);
+      })
+  }
+
 
 
 }]);//End controller
