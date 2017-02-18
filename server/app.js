@@ -1,6 +1,8 @@
 var express = require('express');
 var path = require('path');
 var app = express();
+var bodyParser = require('body-parser');
+var randomApi = require('./routes/random');
 const LOCALPORT = 3000;
 var portDecision = process.env.PORT || LOCALPORT;
 
@@ -23,7 +25,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });
 
-// app.use('/random', randomApi);
+app.use('/random', randomApi);
 
 app.listen(portDecision, function() {
   console.log("Listening on port ", portDecision);
