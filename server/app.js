@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });
 
-app.use('/addStudent', addStudent);
+// app.use('/addStudent', addStudent);
 
 app.listen(portDecision, function() {
   console.log("Listening on port ", portDecision);
