@@ -1,28 +1,25 @@
 app.controller('HomeController', ['$http', '$location', function($http, $location) {
+  console.log("Home Controller Running");
   const self = this;
 
   self.admin = function() {
     $location.path('/admin');
   };
 
-  self.who = "Casey";
-  self.notes = "These are some notes";
+  getPizza();
 
-
-  self.studentName = "Hello World";
-
-  self.addStudent = function() {
+  function getPizza() {
     $http({
-      method: 'POST',
-      url: '/addStudent',
-      data: {
-        studentName: self.studentName
-      }
-    }).then(function(res) {
-      console.log(res);
+      method: 'GET',
+      url: '/pizza',
+    }).then(function(response){
+      console.log("pizza: ", response.data);
+      self.who = response.data[0].pizza_for;
+      self.time = moment(response.data[0].time).toString();
+      self.notes = response.data[0].notes;
     })
+  }
 
-  };
 
-  console.log("Home Controller Running");
+
 }]);//End controller;

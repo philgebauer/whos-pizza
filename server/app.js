@@ -2,10 +2,11 @@ require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var app = express();
-var addStudent = require('./routes/addStudent');
+// var addStudent = require('./routes/addStudent');
 var admin = require('./routes/admin');
+var pizza = require('./routes/pizza');
 var bodyParser = require('body-parser');
-var decoder = require('./modules/decoder');
+// var decoder = require('./modules/decoder');
 const LOCALPORT = 3000;
 var portDecision = process.env.PORT || LOCALPORT;
 
@@ -22,6 +23,7 @@ app.get('/', function(req, res) {
 
 // app.use('/addStudent', addStudent);
 app.use('/admin', admin);
+app.use('/pizza', pizza);
 
 app.listen(portDecision, function() {
   console.log("Listening on port ", portDecision);
