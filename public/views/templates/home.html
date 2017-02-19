@@ -9,9 +9,16 @@
 
 <div class="pizzaText"> The Pizza is for {{home.who}}</div>
 <div class="pizzaText">{{home.notes}}</div>
-{{home.currentTime}}</br>
-{{home.timeReady}}</br>
-{{home.time}}
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline center">Pizza will be up for grabs in</span>
+    </md-card-titil-text>
+  </md-card-title>
+  <md-card-content>
+    <span class="md-headline center">{{home.time}}</span>
+  </md-card-content>
+</md-card>
 
 
 <!-- <button class="center" ng-click=""> Click Here to Sign-up </button> -->
