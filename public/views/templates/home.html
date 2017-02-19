@@ -1,1 +1,16 @@
-<h1>HELLO</h1>
+
+<div class='center header'>Who's The Pizza For??</div>
+
+<div class='pizza'>
+<img src="../assets/pizza.png" style="height: 400px;"> <br>
+</div>
+
+<br>
+
+<div class="pizzaText"> The Pizza is for {{home.who}}</div>
+<div class="pizzaText">{{home.notes}}</div>
+{{home.time}}
+
+
+<!-- <button class="center" ng-click=""> Click Here to Sign-up </button> -->
+<md-button type="submit" class="md-raised" ng-click="home.admin()">admin</md-button>
