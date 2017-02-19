@@ -1,5 +1,12 @@
-app.controller('HomeController', ['$http', function($http) {
+app.controller('HomeController', ['$http', '$location', function($http, $location) {
   const self = this;
+
+  self.admin = function() {
+    $location.path('/admin');
+  };
+
+  self.who = "Casey";
+  self.notes = "These are some notes";
 
 
   self.studentName = "Hello World";
