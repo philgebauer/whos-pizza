@@ -1,3 +1,38 @@
+
+            <div class='form'>
+
+            <h1>Admin Stuff</h1>
+
+          </div>
+          <div class='form1'>
+
+              <label for="whoPizza">Who is the pizza for?</label>
+
+              <br> 
+              <input type="text" name="whoPizza" ng-model="admin.who"/><br>
+            </div>
+            <div class='form1'>
+              <label>Minutes until pizza is available to everyone</label>
+              <select ng-model="admin.time">
+                <option ng-repeat="time in [30, 60, 90, 120, 150, 180]">{{time}}</option>
+              </select>
+            </div>
+            <div class='form1'>
+              <label for="notes">Notes:</label><br>
+              <input type="text" name="notes" ng-model="admin.notes"/><br>
+            </div>
+            <div class='form1'>
+            <button type="submit"  ng-click="admin.test()">Submit</button>
+          </div>
+          <!-- <button ng-click="">Select a random person to get pizza access</button> -->
+
+
+
+
+
+
+
+
 <!-- <div>
   <form name="adminForm">
     <div class="form-group">
@@ -18,7 +53,7 @@
 </div> -->
 
 
-<md-card>
+<!-- <md-card>
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">Action buttons</span>
@@ -43,4 +78,4 @@
             <button type="submit"  ng-click="admin.test()">Submit</button>
           <button ng-click="">Select a random person to get pizza access</button>
         </md-card-content>
-      </md-card>
+      </md-card> -->

@@ -35,3 +35,22 @@
   justify-content: center;
 
 }
+
+
+.form {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.form1 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+/*
+input {
+  padding: 20px 10px;
+  line-height: 28px;
+}*/
