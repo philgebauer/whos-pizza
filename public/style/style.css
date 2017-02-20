@@ -1,15 +1,16 @@
 * {
   background-color: #FAFAFA;
-  opacity: 60;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
-  font-size: 100px;
+  font-size: 65px;
   height: 60px;
-  background-color: #FAFAFA;
-  opacity: 60;
-  padding-top: 5%;
+  background-color: #38618C;
+  /*opacity: 0.5;*/
+  padding-top: 1%;
   padding-bottom: 7%;
+  color: white;
 }
 
 .center {
@@ -18,16 +19,19 @@
 }
 
 .pizza {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
+  padding-top: 2%;
   padding-bottom: 3%;
+  text-align: center;
 }
 
 .pizzaText {
   font-size: 50px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 5%;
+  /*display: flex;
+  justify-content: center;*/
+  /*padding-bottom: 5%;*/
+  text-align: center;
 }
 
 .homepage-button {
