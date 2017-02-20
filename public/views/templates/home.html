@@ -7,9 +7,10 @@
 
 <br>
 
-<div class="pizzaText"> The Pizza is for _____ AND ______ </div>
+<div class="pizzaText"> The Pizza is for {{home.who}}</div>
+<div class="pizzaText">{{home.notes}}</div>
+{{home.time}}
 
 
 <!-- <button class="center" ng-click=""> Click Here to Sign-up </button> -->
-<input ng-model="home.studentName"/>
-<button class="md-raised center homepage-button" ng-click="home.addStudent()">Click Here to Sign-up</button>
+<md-button type="submit" class="md-raised" ng-click="home.admin()">admin</md-button>
