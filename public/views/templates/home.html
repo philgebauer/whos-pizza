@@ -1,25 +1,27 @@
+<div layout="row" layout-fill layout-align='center'>
+    <md-toolbar id='toolbar'>
 
-<div class='center header'>Who's The Pizza For??</div>
+          <span>Who's The Pizza For?</span>
 
-<div class='pizza'>
-<img src="../assets/pizza.png" style="height: 400px;"> <br>
+    </md-toolbar>
+
 </div>
 
-<br>
+<div class='pizza'>
+<img class='rotate' src="../assets/pizza.png" style="height: 400px;"> <br>
+</div>
 
-<div class="pizzaText"> The Pizza is for {{home.who}}</div>
-<div class="pizzaText">{{home.notes}}</div>
 <md-card>
   <md-card-title>
     <md-card-title-text>
-      <span class="md-headline center">Pizza will be up for grabs in</span>
+      <div class="pizzaText md-headline center"> The Pizza is for&nbsp;<u>{{home.who}}</u> </div>
+      <span class="md-headline center">Pizza will be up for grabs in {{home.time}}</span>
+      <div class="pizzaText md-headline center">{{home.notes}}</div>
     </md-card-titil-text>
   </md-card-title>
-  <md-card-content layout="row" layout-align="center">
-    <span class="md-headline center">{{home.time}}</span>
-  </md-card-content>
   <md-button type="submit" class="md-raised" ng-click="home.admin()">admin</md-button>
 </md-card>
+
 
 
 <!-- <button class="center" ng-click=""> Click Here to Sign-up </button> -->
