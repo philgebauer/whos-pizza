@@ -11,15 +11,15 @@
 <img class='rotate' src="../assets/pizza.png" style="height: 400px;"> <br>
 </div>
 
-<md-card>
+<md-card class="md-whiteframe-9dp">
   <md-card-title>
     <md-card-title-text>
       <div class="pizzaText md-headline center"> The Pizza is for&nbsp;<u>{{home.who}}</u> </div>
       <span class="md-headline center">Pizza will be up for grabs in {{home.time}}</span>
-      <div class="pizzaText md-headline center">{{home.notes}}</div>
+      <span class="md-headline center">{{home.notes}}</span>
     </md-card-titil-text>
   </md-card-title>
-  <md-button type="submit" class="md-raised" ng-click="home.admin()">admin</md-button>
+  <md-button type="submit" ng-click="home.admin()">admin</md-button>
 </md-card>
 
 
