@@ -1,17 +1,23 @@
-* {
+@font-face {
+    font-family: "KAPIZZA_";
+    src: url(../assets/KAPIZZA_.TTF) ;
+}
+
+body {
   background-color: #FAFAFA;
   opacity: 60;
 }
 
 
 
-.header {
-  font-size: 100px;
-  height: 60px;
-  background-color: #FAFAFA;
-  opacity: 60;
-  padding-top: 5%;
-  padding-bottom: 7%;
+#toolbar {
+  text-align: center;
+  background-color: #07AA9E;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  font-family: "KAPIZZA_",  sans-serif;
+  font-size: 84px;
 }
 
 .center {
