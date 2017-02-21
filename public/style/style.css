@@ -1,0 +1,39 @@
+* {
+  background-color: #FAFAFA;
+  opacity: 60;
+}
+
+
+
+.header {
+  font-size: 100px;
+  height: 60px;
+  background-color: #FAFAFA;
+  opacity: 60;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.pizza {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.pizzaText {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.homepage-button {
+  display: flex;
+  justify-content: center;
+
+}
