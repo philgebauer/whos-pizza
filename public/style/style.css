@@ -30,7 +30,14 @@ body {
   justify-content: center;
   padding-bottom: 3%;
 }
+.rotate {
+  transition-duration: 1s;
+  transition-property: transform;
 
+}
+.rotate:hover{
+  transform:rotate(360deg);
+}
 .pizzaText {
   font-size: 50px;
   display: flex;
