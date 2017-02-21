@@ -7,7 +7,9 @@
 • Phil Gebauer — [@philgebauer](http://github.com/philgebauer)  
 • Casey Hyde — [@caseyhyde](http://github.com/caseyhyde)  
 
+## Getting Started
+
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT Licenses
