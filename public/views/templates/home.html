@@ -1,5 +1,11 @@
+<div layout="row" layout-fill layout-align='center'>
+    <md-toolbar id='toolbar'>
 
-<div class='center header'>Who's The Pizza For??</div>
+          <span>Who's The Pizza For?</span>
+
+    </md-toolbar>
+
+</div>
 
 <div class='pizza'>
 <img src="../assets/pizza.png" style="height: 400px;"> <br>
@@ -7,9 +13,10 @@
 
 <br>
 
-<div class="pizzaText"> The Pizza is for {{home.who}}</div>
+<div class="pizzaText"> The Pizza is for {{home.who}} </div>
+<div class="pizzaText"> at {{home.time}} it's for anyone</div>
 <div class="pizzaText">{{home.notes}}</div>
-{{home.time}}
+
 
 
 <!-- <button class="center" ng-click=""> Click Here to Sign-up </button> -->

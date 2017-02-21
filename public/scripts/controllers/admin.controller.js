@@ -1,4 +1,4 @@
-app.controller('AdminController', ['$http', function($http) {
+app.controller('AdminController', ['$http', '$location', function($http, $location) {
   const self = this;
 
   console.log("Admin Controller Running");
@@ -22,6 +22,7 @@ app.controller('AdminController', ['$http', function($http) {
     })
     .then(function(res) {
       console.log(res);
+      $location.path('/home');
     })
   };
 
